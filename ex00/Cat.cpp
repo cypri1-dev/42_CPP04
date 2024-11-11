@@ -6,10 +6,11 @@
 /*   By: cyferrei <cyferrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 14:55:53 by cyferrei          #+#    #+#             */
-/*   Updated: 2024/11/11 16:49:18 by cyferrei         ###   ########.fr       */
+/*   Updated: 2024/11/11 19:12:28 by cyferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "Animal.hpp"
 #include "Cat.hpp"
 
 /*--------------------------------------------------------ORTHODOX CANONICAL FORM---------------------------------------------------------*/
@@ -19,7 +20,7 @@ Cat::Cat() {
 	this->_type = "Cat";
 }
 
-Cat::Cat(const Cat &other) {
+Cat::Cat(const Cat &other) : Animal(other) {
 	std::cout << BOLD_ON YELLOW << "Copy (Cat) constructor called" << BOLD_OFF << std::endl;
 	*this = other;
 }

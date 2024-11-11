@@ -6,11 +6,12 @@
 /*   By: cyferrei <cyferrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 15:01:38 by cyferrei          #+#    #+#             */
-/*   Updated: 2024/11/11 17:05:03 by cyferrei         ###   ########.fr       */
+/*   Updated: 2024/11/11 19:13:00 by cyferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "WrongCat.hpp"
+#include "WrongAnimal.hpp"
 
 /*--------------------------------------------------------ORTHODOX CANONICAL FORM---------------------------------------------------------*/
 
@@ -19,7 +20,7 @@ WrongCat::WrongCat() {
 	this->_type = "WrongCat";
 }
 
-WrongCat::WrongCat(const WrongCat &other) {
+WrongCat::WrongCat(const WrongCat &other) : WrongAnimal(other) {
 	std::cout << BOLD_ON YELLOW << "Copy (WrongCat) constructor called" << BOLD_OFF << std::endl;
 	*this = other;
 }

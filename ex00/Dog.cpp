@@ -6,11 +6,12 @@
 /*   By: cyferrei <cyferrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 14:55:58 by cyferrei          #+#    #+#             */
-/*   Updated: 2024/11/11 16:49:24 by cyferrei         ###   ########.fr       */
+/*   Updated: 2024/11/11 19:13:16 by cyferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Dog.hpp"
+#include "Animal.hpp"
 
 /*--------------------------------------------------------ORTHODOX CANONICAL FORM---------------------------------------------------------*/
 
@@ -19,7 +20,7 @@ Dog::Dog() {
 	this->_type = "Dog";
 }
 
-Dog::Dog(const Dog &other) {
+Dog::Dog(const Dog &other) : Animal(other) {
 	std::cout << BOLD_ON YELLOW << "Copy (Dog) constructor called" << BOLD_OFF << std::endl;
 	*this = other;
 }
