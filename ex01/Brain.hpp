@@ -6,7 +6,7 @@
 /*   By: cyferrei <cyferrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 20:30:02 by cyferrei          #+#    #+#             */
-/*   Updated: 2024/11/11 20:46:30 by cyferrei         ###   ########.fr       */
+/*   Updated: 2024/11/12 15:38:07 by cyferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,9 @@ class Brain {
 		Brain(const Brain &other);
 		Brain &operator=(const Brain &other);
 		~Brain();
+		
+		void setIdeasBrain(std::string str, unsigned int idx);
+		std::string getIdeasBrain(unsigned int idx)const;
 };
 
 #endif

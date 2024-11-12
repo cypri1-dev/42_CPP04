@@ -6,7 +6,7 @@
 /*   By: cyferrei <cyferrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 14:55:50 by cyferrei          #+#    #+#             */
-/*   Updated: 2024/11/11 16:59:02 by cyferrei         ###   ########.fr       */
+/*   Updated: 2024/11/12 15:25:26 by cyferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ class Animal {
 		virtual void makeSound()const; // vitual to allow polymorphism
 
 		std::string getType()const;
+		void addIdea(const std::string idea);
 };
 
 #endif
