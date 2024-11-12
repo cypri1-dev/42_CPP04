@@ -6,7 +6,7 @@
 /*   By: cyferrei <cyferrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 14:56:03 by cyferrei          #+#    #+#             */
-/*   Updated: 2024/11/12 17:31:36 by cyferrei         ###   ########.fr       */
+/*   Updated: 2024/11/12 17:43:49 by cyferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,15 @@ int main()
 		delete animals[i];
 	}
 	
+	{
+		const Animal* j = new Dog();
+		const Animal* i = new Cat();
+
+		delete i;
+		delete j;
+	}
+	
 	const Dog* Olaf = new Dog;
-	
-	
 	Olaf->setIdeasDog("I wanna bone!", 0);
 	std::cout << Olaf->getIdeasDog(0) << std::endl;
 	Olaf->setIdeasDog("I wanna BIG bone!", 0);
