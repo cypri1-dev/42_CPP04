@@ -6,14 +6,14 @@
 #    By: cyferrei <cyferrei@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/11 14:56:05 by cyferrei          #+#    #+#              #
-#    Updated: 2024/11/12 17:53:34 by cyferrei         ###   ########.fr        #
+#    Updated: 2024/11/13 11:29:58 by cyferrei         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = AnimalUpdated
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -g3
-SRC = Animal.cpp Cat.cpp Dog.cpp Brain.cpp main.cpp
+SRC = Animal.cpp Cat.cpp Dog.cpp WrongAnimal.cpp WrongCat.cpp Brain.cpp main.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
