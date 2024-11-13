@@ -6,7 +6,7 @@
 /*   By: cyferrei <cyferrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 14:56:03 by cyferrei          #+#    #+#             */
-/*   Updated: 2024/11/12 17:59:43 by cyferrei         ###   ########.fr       */
+/*   Updated: 2024/11/13 11:28:18 by cyferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,10 @@
 int main() {
 	const int size = 10;
 	const Animal* animals[size];
-
+	
+	// test to check abstract class
+	// const Animal test;
+	
 	for (int i = 0; i < size; i++) {
 		if (i < size / 2) {
 			animals[i] = new Dog();
