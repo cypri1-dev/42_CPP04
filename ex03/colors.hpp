@@ -1,28 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cure.hpp                                           :+:      :+:    :+:   */
+/*   colors.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cyferrei <cyferrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/13 17:35:46 by cyferrei          #+#    #+#             */
-/*   Updated: 2024/11/13 17:40:50 by cyferrei         ###   ########.fr       */
+/*   Created: 2024/11/13 16:32:55 by cyferrei          #+#    #+#             */
+/*   Updated: 2024/11/13 16:33:30 by cyferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CURE_HPP
-#define CURE_HPP
+#ifndef COLORS_HPP
+#define COLORS_HPP
 
-#include "AMateria.hpp"
-
-class Cure : public AMateria {
-	public:
-		Cure();
-		Cure(const Cure &other);
-		Cure &operator=(const Cure &other);
-		~Cure();
-
-		AMateria* clone() const;
-};
+#define BOLD_ON "\033[1m"
+#define BOLD_OFF "\033[0m"
+#define YELLOW "\033[33m"
+#define RESET "\033[0m"
+#define GREEN "\033[32m"
+#define RED "\033[31m"
+#define BLUE "\033[34m"
 
 #endif
