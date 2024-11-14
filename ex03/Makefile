@@ -6,14 +6,14 @@
 #    By: cyferrei <cyferrei@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/13 13:06:30 by cyferrei          #+#    #+#              #
-#    Updated: 2024/11/13 13:23:57 by cyferrei         ###   ########.fr        #
+#    Updated: 2024/11/14 15:31:17 by cyferrei         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = littleRpg
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -g3
-SRC = AMateria.cpp ICharacter.cpp Character.cpp Ice.cpp Cure.cpp IMateriaSource.cpp main.cpp
+SRC = AMateria.cpp Ice.cpp ICharacter.cpp Character.cpp Cure.cpp IMateriaSource.cpp main.cpp
 
 OBJ = $(SRC:.cpp=.o)
 

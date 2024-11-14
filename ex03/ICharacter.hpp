@@ -6,17 +6,16 @@
 /*   By: cyferrei <cyferrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 16:22:55 by cyferrei          #+#    #+#             */
-/*   Updated: 2024/11/13 18:59:52 by cyferrei         ###   ########.fr       */
+/*   Updated: 2024/11/14 17:26:01 by cyferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ICHARACTER_HPP
 #define ICHARACTER_HPP
+#pragma once
 
 #include "AMateria.hpp"
-#include "colors.hpp"
-// #include <string>
-
+#include <string>
 
 class ICharacter {
 	public:
