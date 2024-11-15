@@ -6,7 +6,7 @@
 /*   By: cyferrei <cyferrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 18:51:29 by cyferrei          #+#    #+#             */
-/*   Updated: 2024/11/14 17:26:27 by cyferrei         ###   ########.fr       */
+/*   Updated: 2024/11/15 13:30:35 by cyferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,11 @@ class Character : public ICharacter {
 		void equip(AMateria* m);
 		void unequip(int idx);
 		void use(int idx, ICharacter &target);
+		void placeOnGroundFull(AMateria *m);
+		void placeOnGroundUnequiped(int idx);
+		void clearGround();
+		void displayInventory() const;
+		void displayGround() const;
 };
 
 #endif
