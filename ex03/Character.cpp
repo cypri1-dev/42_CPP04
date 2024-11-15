@@ -6,7 +6,7 @@
 /*   By: cyferrei <cyferrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 18:51:27 by cyferrei          #+#    #+#             */
-/*   Updated: 2024/11/15 13:52:33 by cyferrei         ###   ########.fr       */
+/*   Updated: 2024/11/15 16:53:55 by cyferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -141,6 +141,10 @@ void Character::placeOnGroundFull(AMateria* m) {
 
 void Character::equip(AMateria* m) {
 	for (int i = 0; i < 4; i++) {
+		if (this->_inventory[i] == m) {
+			std::cout << BOLD_ON BLUE << "Materia already in inventory!" BOLD_OFF << std::endl;
+			return;
+		}
 		if (this->_inventory[i] == 0) {
 			this->_inventory[i] = m;
 			std::cout << BOLD_ON BLUE << this->getName() << BOLD_OFF << " equiped " << BOLD_ON << m->getType() << BOLD_OFF << "!" << std::endl;
@@ -180,6 +184,10 @@ void Character::unequip(int idx) {
 		std::cout << BOLD_ON RED << "Wrong idx!" << BOLD_OFF << std::endl;
 		return;
 	}
+	if (this->_inventory[idx] == 0) {
+		std::cout << BOLD_ON RED << "Nothing at this index!" << BOLD_OFF << std::endl;
+		return;
+	}
 	this->placeOnGroundUnequiped(idx);
 }
 
@@ -198,7 +206,7 @@ void Character::displayGround() const {
 	std::cout << "Ground contents:" << std::endl;
 	bool isEmpty = true;
 	for (int i = 0; i < 100; ++i) {
-		if (this->_ground[i] != 0) {
+		if (this->_ground[i]) {
 			std::cout << "  Slot " << i << ": " << this->_ground[i]->getType() << " at address " << this->_ground[i] << std::endl;
 			isEmpty = false;
 		}
