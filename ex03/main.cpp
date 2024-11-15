@@ -6,7 +6,7 @@
 /*   By: cyferrei <cyferrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 13:21:44 by cyferrei          #+#    #+#             */
-/*   Updated: 2024/11/15 16:54:55 by cyferrei         ###   ########.fr       */
+/*   Updated: 2024/11/15 17:43:51 by cyferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,8 @@ int main() {
 	character1.displayInventory();
 	
 	std::cout << std::endl << BOLD_ON << "----------USE FUNCTION------------" << BOLD_OFF << std::endl << std::endl;
+	ice->use(character1);
+	cureCloneD->use(character);
 	character.use(0, character1);
 	character1.use(1, character);
 

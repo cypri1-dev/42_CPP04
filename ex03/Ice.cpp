@@ -6,12 +6,13 @@
 /*   By: cyferrei <cyferrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 16:54:03 by cyferrei          #+#    #+#             */
-/*   Updated: 2024/11/14 15:30:31 by cyferrei         ###   ########.fr       */
+/*   Updated: 2024/11/15 17:36:36 by cyferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Ice.hpp"
 #include "AMateria.hpp"
+#include "ICharacter.hpp"
 #include "colors.hpp"
 
 
@@ -45,4 +46,8 @@ Ice::~Ice() {
 
 AMateria* Ice::clone()const {
 	return new Ice(*this);
+}
+
+void Ice::use(ICharacter& target) {
+	std::cout << BOLD_ON BLUE << "* shoots an ice bolt at " << target.getName() << "*" << BOLD_OFF << std::endl;
 }

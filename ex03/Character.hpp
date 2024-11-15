@@ -6,12 +6,10 @@
 /*   By: cyferrei <cyferrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 18:51:29 by cyferrei          #+#    #+#             */
-/*   Updated: 2024/11/15 13:30:35 by cyferrei         ###   ########.fr       */
+/*   Updated: 2024/11/15 17:20:29 by cyferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CHARACTER_HPP
-#define CHARACTER_HPP
 #pragma once
 
 #include "AMateria.hpp"
@@ -40,5 +38,3 @@ class Character : public ICharacter {
 		void displayInventory() const;
 		void displayGround() const;
 };
-
-#endif

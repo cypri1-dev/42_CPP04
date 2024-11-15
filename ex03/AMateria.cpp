@@ -6,7 +6,7 @@
 /*   By: cyferrei <cyferrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 16:17:04 by cyferrei          #+#    #+#             */
-/*   Updated: 2024/11/13 17:45:53 by cyferrei         ###   ########.fr       */
+/*   Updated: 2024/11/15 17:42:25 by cyferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,4 +50,6 @@ std::string const &AMateria::getType()const {
 
 /*---------------------------------------------------------FUNCTIONS----------------------------------------------------------------------*/
 
-// Nothing here because functions are virtuals: they will be defined in a child class (Ice and Cure)!
+void AMateria::use(ICharacter& target) {
+	std::cout << BOLD_ON BLUE << "does nothing to " << target.getName() << BOLD_OFF << std::endl;
+}

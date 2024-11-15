@@ -6,11 +6,13 @@
 /*   By: cyferrei <cyferrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 14:56:03 by cyferrei          #+#    #+#             */
-/*   Updated: 2024/11/13 11:28:18 by cyferrei         ###   ########.fr       */
+/*   Updated: 2024/11/15 17:14:26 by cyferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Animal.hpp"
+#include "WrongAnimal.hpp"
+#include "WrongCat.hpp"
 #include "Cat.hpp"
 #include "Dog.hpp"
 
@@ -50,5 +52,11 @@ int main() {
 		std::cout << "doggo2 après modification: " << doggo2.getIdeasDog(0) << std::endl;
 	}
 
+	WrongAnimal* fake = new WrongCat();
+	fake->makeSound();
+	WrongCat fakeWrongCat;
+	fakeWrongCat.makeSound();
+
+	delete fake;
 	return 0;
 }

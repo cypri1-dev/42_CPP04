@@ -6,12 +6,11 @@
 /*   By: cyferrei <cyferrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 17:35:46 by cyferrei          #+#    #+#             */
-/*   Updated: 2024/11/13 17:40:50 by cyferrei         ###   ########.fr       */
+/*   Updated: 2024/11/15 17:30:36 by cyferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CURE_HPP
-#define CURE_HPP
+#pragma once
 
 #include "AMateria.hpp"
 
@@ -23,6 +22,5 @@ class Cure : public AMateria {
 		~Cure();
 
 		AMateria* clone() const;
+		void use(ICharacter& target);
 };
-
-#endif

@@ -6,7 +6,7 @@
 /*   By: cyferrei <cyferrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 14:55:48 by cyferrei          #+#    #+#             */
-/*   Updated: 2024/11/13 10:56:20 by cyferrei         ###   ########.fr       */
+/*   Updated: 2024/11/15 17:46:53 by cyferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,9 +41,3 @@ Animal::~Animal() {
 std::string Animal::getType()const {
 	return (this->_type);
 }
-
-/*---------------------------------------------------------FUNCTIONS----------------------------------------------------------------------*/
-
-// void Animal::makeSound()const {
-// 	std::cout << BOLD_ON BLUE << "Undifined sound" << RESET << std::endl;
-// }

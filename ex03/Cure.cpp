@@ -6,7 +6,7 @@
 /*   By: cyferrei <cyferrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 17:35:44 by cyferrei          #+#    #+#             */
-/*   Updated: 2024/11/14 15:30:22 by cyferrei         ###   ########.fr       */
+/*   Updated: 2024/11/15 17:44:41 by cyferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,4 +44,8 @@ Cure::~Cure() {
 
 AMateria* Cure::clone()const {
 	return new Cure(*this);
+}
+
+void Cure::use(ICharacter& target) {
+	std::cout << BOLD_ON BLUE << "*heals " << target.getName() << " 's wounds *" << BOLD_OFF << std::endl;
 }
