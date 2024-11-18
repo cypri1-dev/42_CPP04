@@ -6,7 +6,7 @@
 /*   By: cyferrei <cyferrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 14:56:03 by cyferrei          #+#    #+#             */
-/*   Updated: 2024/11/15 17:04:23 by cyferrei         ###   ########.fr       */
+/*   Updated: 2024/11/18 13:14:21 by cyferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,5 +58,10 @@ int main()
 		std::cout << doggo2.getIdeasDog(0) << std::endl;
 	}
 	std::cout << doggo1.getIdeasDog(0) << std::endl;
+
+	const Animal* j = new Dog();
+	const Animal* i = new Cat();
+	delete j;//should not create a leak
+	delete i;
 	return 0;
 }

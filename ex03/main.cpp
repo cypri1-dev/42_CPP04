@@ -6,7 +6,7 @@
 /*   By: cyferrei <cyferrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 13:21:44 by cyferrei          #+#    #+#             */
-/*   Updated: 2024/11/15 17:43:51 by cyferrei         ###   ########.fr       */
+/*   Updated: 2024/11/18 13:20:58 by cyferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -111,7 +111,7 @@ int main() {
 		std::cout << "Created Materia: " << random->getType() << std::endl;
 		delete random;
 	}
-
+	
 	delete iceTest;
 	delete cureTest;
 	delete iceTest1;
